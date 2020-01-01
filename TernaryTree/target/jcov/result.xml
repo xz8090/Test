@@ -1,0 +1,1380 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<coverage
+        xmlns='http://java.sun.com/jcov/namespace'
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:schemaLocation='http://java.sun.com/jcov/namespace coverage.xsd'>
+
+	<head>
+		<property name='coverage.generator.args' val=''/>
+		<property name='coverage.generator.mode' val='BRANCH'/>
+		<property name='coverage.generator.internal' val='include'/>
+		<property name='coverage.generator.include' val=''/>
+		<property name='coverage.generator.exclude' val=''/>
+		<property name='coverage.generator.caller_include' val='.*'/>
+		<property name='coverage.generator.caller_exclude' val=''/>
+		<property name='coverage.created.date' val='2019-11-02'/>
+		<property name='coverage.created.time' val='03:45:36'/>
+		<property name='coverage.generator.fullversion' val='3.0os.beta-2 built: 10 March 2018'/>
+		<property name='coverage.generator.name' val='jcov'/>
+		<property name='coverage.generator.version' val='3.0'/>
+		<property name='coverage.spec.version' val='1.3'/>
+		<property name='java.runtime.version' val='1.8.0_181-b13'/>
+		<property name='java.version' val='1.8.0_181'/>
+		<property name='os.arch' val='amd64'/>
+		<property name='os.name' val='Windows 7'/>
+		<property name='os.version' val='6.1'/>
+		<property name='user.name' val='lbq'/>
+		<property name='dynamic.collected' val='false'/>
+		<property name='id.count' val='297'/>
+	</head>
+	<package name="net.mooctest" moduleName="no_module">
+		<class name="EmptyQueueException" supername="java/lang/RuntimeException" checksum="3141361641" source="EmptyQueueException.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="0" count="0"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=13;5=14;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/lang/String;)V" flags=' public' access="1" cons="true" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="1" count="0"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=17;5=18;</lt>
+			</meth>
+		</class>
+		<class name="EmptyTreeException" supername="java/lang/RuntimeException" checksum="2792906375" source="EmptyTreeException.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="2" count="0"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=13;5=14;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/lang/String;)V" flags=' public' access="1" cons="true" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="3" count="0"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=17;5=18;</lt>
+			</meth>
+		</class>
+		<class name="LinkedQueue" supername="java/lang/Object" checksum="79691453" signature="&lt;T:Ljava/lang/Object;&gt;Ljava/lang/Object;Lnet/mooctest/QueueInterface&lt;TT;&gt;;" source="LinkedQueue.java" flags=' public final'>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="15">
+				<bl s="0" e="14">
+					<methenter s="0" e="14" id="15" count="2"/>
+					<exit s="14" e="14" opcode="return"/>
+				</bl>
+				<lt>0=17;4=18;9=19;14=20;</lt>
+			</meth>
+			<meth name="enqueue" vmsig="(Ljava/lang/Object;)V" flags=' public' access="1" signature="(TT;)V" length="41">
+				<bl s="0" e="18">
+					<methenter s="0" e="18" id="16" count="5"/>
+					<br s="16" e="18">
+						<cond s="27" e="34" id="17" count="2" val="true"/>
+						<cond s="19" e="26" id="18" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="19" e="26">
+					<goto s="24" e="26">
+						<tg s="35" e="40" id="19" count="3"/>
+					</goto>
+				</bl>
+				<bl s="27" e="34">
+				</bl>
+				<bl s="35" e="40">
+					<fall s="35" e="40" id="20" count="2"/>
+					<exit s="40" e="40" opcode="return"/>
+				</bl>
+				<lt>0=23;12=25;19=26;27=28;35=31;40=32;</lt>
+			</meth>
+			<meth name="getFront" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="23">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="21" count="4"/>
+					<br s="4" e="6">
+						<cond s="15" e="22" id="22" count="4" val="true"/>
+						<cond s="7" e="14" id="23" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="14">
+					<exit s="14" e="14" opcode="athrow"/>
+				</bl>
+				<bl s="15" e="22">
+					<exit s="22" e="22" opcode="areturn"/>
+				</bl>
+				<lt>0=35;7=36;15=38;</lt>
+			</meth>
+			<meth name="dequeue" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="59">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="24" count="2"/>
+					<br s="8" e="10">
+						<cond s="26" e="51" id="25" count="0" val="true"/>
+						<cond s="11" e="17" id="26" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="11" e="17">
+					<br s="15" e="17">
+						<cond s="26" e="51" id="27" count="2" val="true"/>
+						<cond s="18" e="25" id="28" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="25">
+					<exit s="25" e="25" opcode="athrow"/>
+				</bl>
+				<bl s="26" e="51">
+					<br s="49" e="51">
+						<cond s="57" e="58" id="29" count="1" val="true"/>
+						<cond s="52" e="56" id="30" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="52" e="56">
+				</bl>
+				<bl s="57" e="58">
+					<fall s="57" e="58" id="31" count="1"/>
+					<exit s="58" e="58" opcode="areturn"/>
+				</bl>
+				<lt>0=44;5=46;26=47;34=48;45=50;52=51;57=54;</lt>
+			</meth>
+			<meth name="isEmpty" vmsig="()Z" flags=' public' access="1" length="20">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="32" count="11"/>
+					<br s="4" e="6">
+						<cond s="18" e="18" id="33" count="7" val="true"/>
+						<cond s="7" e="13" id="34" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="13">
+					<br s="11" e="13">
+						<cond s="18" e="18" id="35" count="0" val="true"/>
+						<cond s="14" e="17" id="36" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="14" e="17">
+					<goto s="15" e="17">
+						<tg s="19" e="19" id="37" count="4"/>
+					</goto>
+				</bl>
+				<bl s="18" e="18">
+				</bl>
+				<bl s="19" e="19">
+					<fall s="19" e="19" id="38" count="7"/>
+					<exit s="19" e="19" opcode="ireturn"/>
+				</bl>
+				<lt>0=58;</lt>
+			</meth>
+			<meth name="clear" vmsig="()V" flags=' public' access="1" length="11">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="39" count="1"/>
+					<exit s="10" e="10" opcode="return"/>
+				</bl>
+				<lt>0=62;5=63;10=64;</lt>
+			</meth>
+			<meth name="&lt;clinit&gt;" vmsig="()V" flags=' static' access="8" clinit="true" length="17">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="40" count="1"/>
+					<br s="5" e="7">
+						<cond s="12" e="12" id="41" count="1" val="true"/>
+						<cond s="8" e="11" id="42" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="8" e="11">
+					<goto s="9" e="11">
+						<tg s="13" e="16" id="43" count="0"/>
+					</goto>
+				</bl>
+				<bl s="12" e="12">
+				</bl>
+				<bl s="13" e="16">
+					<fall s="13" e="16" id="44" count="1"/>
+					<exit s="16" e="16" opcode="return"/>
+				</bl>
+				<lt>0=11;</lt>
+			</meth>
+		</class>
+		<class name="LinkedQueue$1" supername="java/lang/Object" checksum="1546465965" source="LinkedQueue.java" inner="anon" flags=' synthetic'>
+		</class>
+		<class name="LinkedQueue$Node" supername="java/lang/Object" checksum="3157196935" source="LinkedQueue.java" inner="inner" flags=''>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/LinkedQueue;Ljava/lang/Object;)V" flags=' private' access="2" cons="true" signature="(TT;)V" length="20">
+				<bl s="0" e="19">
+					<methenter s="0" e="19" id="4" count="0"/>
+					<exit s="19" e="19" opcode="return"/>
+				</bl>
+				<lt>0=72;9=73;14=74;19=75;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/LinkedQueue;Ljava/lang/Object;Lnet/mooctest/LinkedQueue$Node;)V" flags=' private' access="2" cons="true" signature="(TT;Lnet/mooctest/LinkedQueue&lt;TT;&gt;.Node;)V" length="20">
+				<bl s="0" e="19">
+					<methenter s="0" e="19" id="5" count="5"/>
+					<exit s="19" e="19" opcode="return"/>
+				</bl>
+				<lt>0=77;9=78;14=79;19=80;</lt>
+			</meth>
+			<meth name="getData" vmsig="()Ljava/lang/Object;" flags=' private' access="2" signature="()TT;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="6" count="4"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=83;</lt>
+			</meth>
+			<meth name="setData" vmsig="(Ljava/lang/Object;)V" flags=' private' access="2" signature="(TT;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="7" count="2"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=87;5=88;</lt>
+			</meth>
+			<meth name="getNextNode" vmsig="()Lnet/mooctest/LinkedQueue$Node;" flags=' private' access="2" signature="()Lnet/mooctest/LinkedQueue&lt;TT;&gt;.Node;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="8" count="2"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=91;</lt>
+			</meth>
+			<meth name="setNextNode" vmsig="(Lnet/mooctest/LinkedQueue$Node;)V" flags=' private' access="2" signature="(Lnet/mooctest/LinkedQueue&lt;TT;&gt;.Node;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="9" count="2"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=95;5=96;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/LinkedQueue;Ljava/lang/Object;Lnet/mooctest/LinkedQueue$Node;Lnet/mooctest/LinkedQueue$1;)V" flags=' synthetic' access="4096" cons="true" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="10" count="5"/>
+					<exit s="7" e="7" opcode="return"/>
+				</bl>
+				<lt>0=66;</lt>
+			</meth>
+			<meth name="access$100" vmsig="(Lnet/mooctest/LinkedQueue$Node;Lnet/mooctest/LinkedQueue$Node;)V" flags=' static synthetic' access="4104" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="11" count="2"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=66;</lt>
+			</meth>
+			<meth name="access$200" vmsig="(Lnet/mooctest/LinkedQueue$Node;)Ljava/lang/Object;" flags=' static synthetic' access="4104" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="12" count="4"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=66;</lt>
+			</meth>
+			<meth name="access$300" vmsig="(Lnet/mooctest/LinkedQueue$Node;Ljava/lang/Object;)V" flags=' static synthetic' access="4104" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="13" count="2"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=66;</lt>
+			</meth>
+			<meth name="access$400" vmsig="(Lnet/mooctest/LinkedQueue$Node;)Lnet/mooctest/LinkedQueue$Node;" flags=' static synthetic' access="4104" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="14" count="2"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=66;</lt>
+			</meth>
+		</class>
+		<class name="LinkedStack" supername="java/lang/Object" checksum="4154369095" signature="&lt;T:Ljava/lang/Object;&gt;Ljava/lang/Object;Lnet/mooctest/StackInterface&lt;TT;&gt;;" source="LinkedStack.java" flags=' public final'>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="10">
+				<bl s="0" e="9">
+					<methenter s="0" e="9" id="54" count="5"/>
+					<exit s="9" e="9" opcode="return"/>
+				</bl>
+				<lt>0=16;4=17;9=18;</lt>
+			</meth>
+			<meth name="push" vmsig="(Ljava/lang/Object;)V" flags=' public' access="1" signature="(TT;)V" length="19">
+				<bl s="0" e="18">
+					<methenter s="0" e="18" id="55" count="14"/>
+					<exit s="18" e="18" opcode="return"/>
+				</bl>
+				<lt>0=21;18=22;</lt>
+			</meth>
+			<meth name="peek" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="23">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="56" count="12"/>
+					<br s="4" e="6">
+						<cond s="15" e="22" id="57" count="12" val="true"/>
+						<cond s="7" e="14" id="58" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="14">
+					<exit s="14" e="14" opcode="athrow"/>
+				</bl>
+				<bl s="15" e="22">
+					<exit s="22" e="22" opcode="areturn"/>
+				</bl>
+				<lt>0=25;7=26;15=28;</lt>
+			</meth>
+			<meth name="pop" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="39">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="59" count="9"/>
+					<br s="8" e="10">
+						<cond s="26" e="38" id="60" count="0" val="true"/>
+						<cond s="11" e="17" id="61" count="9" val="false"/>
+					</br>
+				</bl>
+				<bl s="11" e="17">
+					<br s="15" e="17">
+						<cond s="26" e="38" id="62" count="9" val="true"/>
+						<cond s="18" e="25" id="63" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="25">
+					<exit s="25" e="25" opcode="athrow"/>
+				</bl>
+				<bl s="26" e="38">
+					<exit s="38" e="38" opcode="areturn"/>
+				</bl>
+				<lt>0=34;5=35;26=36;37=38;</lt>
+			</meth>
+			<meth name="isEmpty" vmsig="()Z" flags=' public' access="1" length="13">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="64" count="23"/>
+					<br s="4" e="6">
+						<cond s="11" e="11" id="65" count="21" val="true"/>
+						<cond s="7" e="10" id="66" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="10">
+					<goto s="8" e="10">
+						<tg s="12" e="12" id="67" count="2"/>
+					</goto>
+				</bl>
+				<bl s="11" e="11">
+				</bl>
+				<bl s="12" e="12">
+					<fall s="12" e="12" id="68" count="21"/>
+					<exit s="12" e="12" opcode="ireturn"/>
+				</bl>
+				<lt>0=42;</lt>
+			</meth>
+			<meth name="clear" vmsig="()V" flags=' public' access="1" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="69" count="1"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=47;5=48;</lt>
+			</meth>
+			<meth name="&lt;clinit&gt;" vmsig="()V" flags=' static' access="8" clinit="true" length="17">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="70" count="1"/>
+					<br s="5" e="7">
+						<cond s="12" e="12" id="71" count="1" val="true"/>
+						<cond s="8" e="11" id="72" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="8" e="11">
+					<goto s="9" e="11">
+						<tg s="13" e="16" id="73" count="0"/>
+					</goto>
+				</bl>
+				<bl s="12" e="12">
+				</bl>
+				<bl s="13" e="16">
+					<fall s="13" e="16" id="74" count="1"/>
+					<exit s="16" e="16" opcode="return"/>
+				</bl>
+				<lt>0=12;</lt>
+			</meth>
+		</class>
+		<class name="LinkedStack$1" supername="java/lang/Object" checksum="1251357312" source="LinkedStack.java" inner="anon" flags=' synthetic'>
+		</class>
+		<class name="LinkedStack$Node" supername="java/lang/Object" checksum="873905646" source="LinkedStack.java" inner="inner" flags=''>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/LinkedStack;Ljava/lang/Object;)V" flags=' private' access="2" cons="true" signature="(TT;)V" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="45" count="0"/>
+					<exit s="7" e="7" opcode="return"/>
+				</bl>
+				<lt>0=57;7=58;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/LinkedStack;Ljava/lang/Object;Lnet/mooctest/LinkedStack$Node;)V" flags=' private' access="2" cons="true" signature="(TT;Lnet/mooctest/LinkedStack&lt;TT;&gt;.Node;)V" length="20">
+				<bl s="0" e="19">
+					<methenter s="0" e="19" id="46" count="14"/>
+					<exit s="19" e="19" opcode="return"/>
+				</bl>
+				<lt>0=60;9=61;14=62;19=63;</lt>
+			</meth>
+			<meth name="getData" vmsig="()Ljava/lang/Object;" flags=' private' access="2" signature="()TT;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="47" count="12"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=66;</lt>
+			</meth>
+			<meth name="setData" vmsig="(Ljava/lang/Object;)V" flags=' private' access="2" signature="(TT;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="48" count="0"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=70;5=71;</lt>
+			</meth>
+			<meth name="getNextNode" vmsig="()Lnet/mooctest/LinkedStack$Node;" flags=' private' access="2" signature="()Lnet/mooctest/LinkedStack&lt;TT;&gt;.Node;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="49" count="9"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=74;</lt>
+			</meth>
+			<meth name="setNextNode" vmsig="(Lnet/mooctest/LinkedStack$Node;)V" flags=' private' access="2" signature="(Lnet/mooctest/LinkedStack&lt;TT;&gt;.Node;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="50" count="0"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=78;5=79;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/LinkedStack;Ljava/lang/Object;Lnet/mooctest/LinkedStack$Node;Lnet/mooctest/LinkedStack$1;)V" flags=' synthetic' access="4096" cons="true" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="51" count="14"/>
+					<exit s="7" e="7" opcode="return"/>
+				</bl>
+				<lt>0=50;</lt>
+			</meth>
+			<meth name="access$100" vmsig="(Lnet/mooctest/LinkedStack$Node;)Ljava/lang/Object;" flags=' static synthetic' access="4104" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="52" count="12"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=50;</lt>
+			</meth>
+			<meth name="access$200" vmsig="(Lnet/mooctest/LinkedStack$Node;)Lnet/mooctest/LinkedStack$Node;" flags=' static synthetic' access="4104" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="53" count="9"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=50;</lt>
+			</meth>
+		</class>
+		<class name="TernaryNode" supername="java/lang/Object" checksum="240536536" signature="&lt;T:Ljava/lang/Object;&gt;Ljava/lang/Object;" source="TernaryNode.java" flags=''>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="75" count="1"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=10;5=11;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/lang/Object;)V" flags=' public' access="1" cons="true" signature="(TT;)V" length="9">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="76" count="14"/>
+					<exit s="8" e="8" opcode="return"/>
+				</bl>
+				<lt>0=14;8=15;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/lang/Object;Lnet/mooctest/TernaryNode;Lnet/mooctest/TernaryNode;Lnet/mooctest/TernaryNode;)V" flags=' public' access="1" cons="true" signature="(TT;Lnet/mooctest/TernaryNode&lt;TT;&gt;;Lnet/mooctest/TernaryNode&lt;TT;&gt;;Lnet/mooctest/TernaryNode&lt;TT;&gt;;)V" length="26">
+				<bl s="0" e="25">
+					<methenter s="0" e="25" id="77" count="14"/>
+					<exit s="25" e="25" opcode="return"/>
+				</bl>
+				<lt>0=18;4=19;9=20;14=21;19=22;25=23;</lt>
+			</meth>
+			<meth name="getData" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="78" count="16"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=28;</lt>
+			</meth>
+			<meth name="setData" vmsig="(Ljava/lang/Object;)V" flags=' public' access="1" signature="(TT;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="79" count="1"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=34;5=35;</lt>
+			</meth>
+			<meth name="getLeftChild" vmsig="()Lnet/mooctest/TernaryNode;" flags=' public' access="1" signature="()Lnet/mooctest/TernaryNode&lt;TT;&gt;;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="80" count="23"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=40;</lt>
+			</meth>
+			<meth name="setLeftChild" vmsig="(Lnet/mooctest/TernaryNode;)V" flags=' public' access="1" signature="(Lnet/mooctest/TernaryNode&lt;TT;&gt;;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="81" count="3"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=46;5=47;</lt>
+			</meth>
+			<meth name="hasLeftChild" vmsig="()Z" flags=' public' access="1" length="13">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="82" count="1"/>
+					<br s="4" e="6">
+						<cond s="11" e="11" id="83" count="0" val="true"/>
+						<cond s="7" e="10" id="84" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="10">
+					<goto s="8" e="10">
+						<tg s="12" e="12" id="85" count="1"/>
+					</goto>
+				</bl>
+				<bl s="11" e="11">
+				</bl>
+				<bl s="12" e="12">
+					<fall s="12" e="12" id="86" count="0"/>
+					<exit s="12" e="12" opcode="ireturn"/>
+				</bl>
+				<lt>0=52;</lt>
+			</meth>
+			<meth name="getMiddleChild" vmsig="()Lnet/mooctest/TernaryNode;" flags=' public' access="1" signature="()Lnet/mooctest/TernaryNode&lt;TT;&gt;;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="87" count="34"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=58;</lt>
+			</meth>
+			<meth name="setMiddleChild" vmsig="(Lnet/mooctest/TernaryNode;)V" flags=' public' access="1" signature="(Lnet/mooctest/TernaryNode&lt;TT;&gt;;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="88" count="3"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=64;5=65;</lt>
+			</meth>
+			<meth name="hasMiddleChild" vmsig="()Z" flags=' public' access="1" length="13">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="89" count="1"/>
+					<br s="4" e="6">
+						<cond s="11" e="11" id="90" count="1" val="true"/>
+						<cond s="7" e="10" id="91" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="10">
+					<goto s="8" e="10">
+						<tg s="12" e="12" id="92" count="0"/>
+					</goto>
+				</bl>
+				<bl s="11" e="11">
+				</bl>
+				<bl s="12" e="12">
+					<fall s="12" e="12" id="93" count="1"/>
+					<exit s="12" e="12" opcode="ireturn"/>
+				</bl>
+				<lt>0=70;</lt>
+			</meth>
+			<meth name="getRightChild" vmsig="()Lnet/mooctest/TernaryNode;" flags=' public' access="1" signature="()Lnet/mooctest/TernaryNode&lt;TT;&gt;;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="94" count="22"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=76;</lt>
+			</meth>
+			<meth name="setRightChild" vmsig="(Lnet/mooctest/TernaryNode;)V" flags=' public' access="1" signature="(Lnet/mooctest/TernaryNode&lt;TT;&gt;;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="95" count="4"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=82;5=83;</lt>
+			</meth>
+			<meth name="hasRightChild" vmsig="()Z" flags=' public' access="1" length="13">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="96" count="1"/>
+					<br s="4" e="6">
+						<cond s="11" e="11" id="97" count="0" val="true"/>
+						<cond s="7" e="10" id="98" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="10">
+					<goto s="8" e="10">
+						<tg s="12" e="12" id="99" count="1"/>
+					</goto>
+				</bl>
+				<bl s="11" e="11">
+				</bl>
+				<bl s="12" e="12">
+					<fall s="12" e="12" id="100" count="0"/>
+					<exit s="12" e="12" opcode="ireturn"/>
+				</bl>
+				<lt>0=88;</lt>
+			</meth>
+			<meth name="isLeaf" vmsig="()Z" flags=' public' access="1" length="27">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="101" count="1"/>
+					<br s="4" e="6">
+						<cond s="25" e="25" id="102" count="0" val="true"/>
+						<cond s="7" e="13" id="103" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="13">
+					<br s="11" e="13">
+						<cond s="25" e="25" id="104" count="0" val="true"/>
+						<cond s="14" e="20" id="105" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="14" e="20">
+					<br s="18" e="20">
+						<cond s="25" e="25" id="106" count="0" val="true"/>
+						<cond s="21" e="24" id="107" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="21" e="24">
+					<goto s="22" e="24">
+						<tg s="26" e="26" id="108" count="1"/>
+					</goto>
+				</bl>
+				<bl s="25" e="25">
+				</bl>
+				<bl s="26" e="26">
+					<fall s="26" e="26" id="109" count="0"/>
+					<exit s="26" e="26" opcode="ireturn"/>
+				</bl>
+				<lt>0=94;</lt>
+			</meth>
+			<meth name="getNumberOfNodes" vmsig="()I" flags=' public' access="1" length="59">
+				<bl s="0" e="12">
+					<methenter s="0" e="12" id="110" count="8"/>
+					<br s="10" e="12">
+						<cond s="21" e="27" id="111" count="6" val="true"/>
+						<cond s="13" e="20" id="112" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="13" e="20">
+				</bl>
+				<bl s="21" e="27">
+					<fall s="21" e="27" id="117" count="2"/>
+					<br s="25" e="27">
+						<cond s="36" e="42" id="113" count="6" val="true"/>
+						<cond s="28" e="35" id="114" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="28" e="35">
+				</bl>
+				<bl s="36" e="42">
+					<fall s="36" e="42" id="118" count="2"/>
+					<br s="40" e="42">
+						<cond s="51" e="58" id="115" count="6" val="true"/>
+						<cond s="43" e="50" id="116" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="43" e="50">
+				</bl>
+				<bl s="51" e="58">
+					<fall s="51" e="58" id="119" count="2"/>
+					<exit s="58" e="58" opcode="ireturn"/>
+				</bl>
+				<lt>0=100;2=101;4=102;6=104;13=105;21=108;28=109;36=112;43=113;51=116;</lt>
+			</meth>
+			<meth name="getHeight" vmsig="()I" flags=' public' access="1" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="120" count="2"/>
+					<exit s="5" e="5" opcode="ireturn"/>
+				</bl>
+				<lt>0=122;</lt>
+			</meth>
+			<meth name="getHeight" vmsig="(Lnet/mooctest/TernaryNode;)I" flags=' private' access="2" signature="(Lnet/mooctest/TernaryNode&lt;TT;&gt;;)I" length="52">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="121" count="42"/>
+					<br s="3" e="5">
+						<cond s="50" e="51" id="122" count="32" val="true"/>
+						<cond s="6" e="49" id="123" count="10" val="false"/>
+					</br>
+				</bl>
+				<bl s="6" e="49">
+				</bl>
+				<bl s="50" e="51">
+					<fall s="50" e="51" id="124" count="10"/>
+					<exit s="51" e="51" opcode="ireturn"/>
+				</bl>
+				<lt>0=126;2=128;6=129;28=130;45=129;50=132;</lt>
+			</meth>
+			<meth name="copy" vmsig="()Lnet/mooctest/TernaryNode;" flags=' public' access="1" signature="()Lnet/mooctest/TernaryNode&lt;TT;&gt;;" length="68">
+				<bl s="0" e="18">
+					<methenter s="0" e="18" id="125" count="5"/>
+					<br s="16" e="18">
+						<cond s="30" e="36" id="126" count="4" val="true"/>
+						<cond s="19" e="29" id="127" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="19" e="29">
+				</bl>
+				<bl s="30" e="36">
+					<fall s="30" e="36" id="132" count="1"/>
+					<br s="34" e="36">
+						<cond s="48" e="54" id="128" count="4" val="true"/>
+						<cond s="37" e="47" id="129" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="37" e="47">
+				</bl>
+				<bl s="48" e="54">
+					<fall s="48" e="54" id="133" count="1"/>
+					<br s="52" e="54">
+						<cond s="66" e="67" id="130" count="4" val="true"/>
+						<cond s="55" e="65" id="131" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="55" e="65">
+				</bl>
+				<bl s="66" e="67">
+					<fall s="66" e="67" id="134" count="1"/>
+					<exit s="67" e="67" opcode="areturn"/>
+				</bl>
+				<lt>0=138;12=140;19=141;30=144;37=145;48=148;55=149;66=152;</lt>
+			</meth>
+		</class>
+		<class name="TernaryTree" supername="java/lang/Object" checksum="238080773" signature="&lt;T:Ljava/lang/Object;&gt;Ljava/lang/Object;Lnet/mooctest/TernaryTreeInterface&lt;TT;&gt;;" source="TernaryTree.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="10">
+				<bl s="0" e="9">
+					<methenter s="0" e="9" id="216" count="3"/>
+					<exit s="9" e="9" opcode="return"/>
+				</bl>
+				<lt>0=11;4=12;9=13;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/lang/Object;)V" flags=' public' access="1" cons="true" signature="(TT;)V" length="17">
+				<bl s="0" e="16">
+					<methenter s="0" e="16" id="217" count="1"/>
+					<exit s="16" e="16" opcode="return"/>
+				</bl>
+				<lt>0=15;4=16;16=17;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/lang/Object;Lnet/mooctest/TernaryTree;Lnet/mooctest/TernaryTree;Lnet/mooctest/TernaryTree;)V" flags=' public' access="1" cons="true" signature="(TT;Lnet/mooctest/TernaryTree&lt;TT;&gt;;Lnet/mooctest/TernaryTree&lt;TT;&gt;;Lnet/mooctest/TernaryTree&lt;TT;&gt;;)V" length="14">
+				<bl s="0" e="13">
+					<methenter s="0" e="13" id="218" count="2"/>
+					<exit s="13" e="13" opcode="return"/>
+				</bl>
+				<lt>0=20;4=21;13=22;</lt>
+			</meth>
+			<meth name="setTree" vmsig="(Ljava/lang/Object;)V" flags=' public' access="1" signature="(TT;)V" length="13">
+				<bl s="0" e="12">
+					<methenter s="0" e="12" id="219" count="1"/>
+					<exit s="12" e="12" opcode="return"/>
+				</bl>
+				<lt>0=25;12=26;</lt>
+			</meth>
+			<meth name="setTree" vmsig="(Ljava/lang/Object;Lnet/mooctest/TernaryTreeInterface;Lnet/mooctest/TernaryTreeInterface;Lnet/mooctest/TernaryTreeInterface;)V" flags=' public' access="1" signature="(TT;Lnet/mooctest/TernaryTreeInterface&lt;TT;&gt;;Lnet/mooctest/TernaryTreeInterface&lt;TT;&gt;;Lnet/mooctest/TernaryTreeInterface&lt;TT;&gt;;)V" length="19">
+				<bl s="0" e="18">
+					<methenter s="0" e="18" id="220" count="1"/>
+					<exit s="18" e="18" opcode="return"/>
+				</bl>
+				<lt>0=31;18=32;</lt>
+			</meth>
+			<meth name="privateSetTree" vmsig="(Ljava/lang/Object;Lnet/mooctest/TernaryTree;Lnet/mooctest/TernaryTree;Lnet/mooctest/TernaryTree;)V" flags=' private' access="2" signature="(TT;Lnet/mooctest/TernaryTree&lt;TT;&gt;;Lnet/mooctest/TernaryTree&lt;TT;&gt;;Lnet/mooctest/TernaryTree&lt;TT;&gt;;)V" length="182">
+				<bl s="0" e="15">
+					<methenter s="0" e="15" id="221" count="3"/>
+					<br s="13" e="15">
+						<cond s="34" e="38" id="222" count="1" val="true"/>
+						<cond s="16" e="22" id="223" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="16" e="22">
+					<br s="20" e="22">
+						<cond s="34" e="38" id="224" count="1" val="true"/>
+						<cond s="23" e="33" id="225" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="23" e="33">
+				</bl>
+				<bl s="34" e="38">
+					<fall s="34" e="38" id="256" count="1"/>
+					<br s="36" e="38">
+						<cond s="89" e="92" id="226" count="1" val="true"/>
+						<cond s="39" e="46" id="227" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="39" e="46">
+					<br s="44" e="46">
+						<cond s="89" e="92" id="228" count="0" val="true"/>
+						<cond s="47" e="52" id="229" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="47" e="52">
+					<br s="50" e="52">
+						<cond s="74" e="88" id="230" count="1" val="true"/>
+						<cond s="53" e="58" id="231" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="53" e="58">
+					<br s="56" e="58">
+						<cond s="74" e="88" id="232" count="0" val="true"/>
+						<cond s="59" e="73" id="233" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="59" e="73">
+					<goto s="71" e="73">
+						<tg s="89" e="92" id="234" count="1"/>
+					</goto>
+				</bl>
+				<bl s="74" e="88">
+				</bl>
+				<bl s="89" e="92">
+					<fall s="89" e="92" id="257" count="1"/>
+					<br s="90" e="92">
+						<cond s="139" e="142" id="235" count="1" val="true"/>
+						<cond s="93" e="99" id="236" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="93" e="99">
+					<br s="97" e="99">
+						<cond s="139" e="142" id="237" count="1" val="true"/>
+						<cond s="100" e="104" id="238" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="100" e="104">
+					<br s="102" e="104">
+						<cond s="125" e="138" id="239" count="0" val="true"/>
+						<cond s="105" e="110" id="240" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="105" e="110">
+					<br s="108" e="110">
+						<cond s="125" e="138" id="241" count="0" val="true"/>
+						<cond s="111" e="124" id="242" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="111" e="124">
+					<goto s="122" e="124">
+						<tg s="139" e="142" id="243" count="1"/>
+					</goto>
+				</bl>
+				<bl s="125" e="138">
+				</bl>
+				<bl s="139" e="142">
+					<fall s="139" e="142" id="258" count="0"/>
+					<br s="140" e="142">
+						<cond s="152" e="155" id="244" count="1" val="true"/>
+						<cond s="143" e="147" id="245" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="143" e="147">
+					<br s="145" e="147">
+						<cond s="152" e="155" id="246" count="0" val="true"/>
+						<cond s="148" e="151" id="247" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="148" e="151">
+				</bl>
+				<bl s="152" e="155">
+					<fall s="152" e="155" id="259" count="2"/>
+					<br s="153" e="155">
+						<cond s="165" e="169" id="248" count="1" val="true"/>
+						<cond s="156" e="160" id="249" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="156" e="160">
+					<br s="158" e="160">
+						<cond s="165" e="169" id="250" count="0" val="true"/>
+						<cond s="161" e="164" id="251" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="161" e="164">
+				</bl>
+				<bl s="165" e="169">
+					<fall s="165" e="169" id="260" count="2"/>
+					<br s="167" e="169">
+						<cond s="181" e="181" id="252" count="1" val="true"/>
+						<cond s="170" e="175" id="253" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="170" e="175">
+					<br s="173" e="175">
+						<cond s="181" e="181" id="254" count="0" val="true"/>
+						<cond s="176" e="180" id="255" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="176" e="180">
+				</bl>
+				<bl s="181" e="181">
+					<fall s="181" e="181" id="261" count="2"/>
+					<exit s="181" e="181" opcode="return"/>
+				</bl>
+				<lt>0=36;12=38;23=39;34=42;47=43;59=44;74=46;89=49;100=50;111=51;125=53;139=57;148=58;152=60;161=61;165=63;176=64;181=66;</lt>
+			</meth>
+			<meth name="getRootData" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="23">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="262" count="1"/>
+					<br s="4" e="6">
+						<cond s="15" e="22" id="263" count="1" val="true"/>
+						<cond s="7" e="14" id="264" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="14">
+					<exit s="14" e="14" opcode="athrow"/>
+				</bl>
+				<bl s="15" e="22">
+					<exit s="22" e="22" opcode="areturn"/>
+				</bl>
+				<lt>0=69;7=70;15=72;</lt>
+			</meth>
+			<meth name="setRootData" vmsig="(Ljava/lang/Object;)V" flags=' protected' access="4" signature="(TT;)V" length="9">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="265" count="0"/>
+					<exit s="8" e="8" opcode="return"/>
+				</bl>
+				<lt>0=77;8=78;</lt>
+			</meth>
+			<meth name="setRootNode" vmsig="(Lnet/mooctest/TernaryNode;)V" flags=' protected' access="4" signature="(Lnet/mooctest/TernaryNode&lt;TT;&gt;;)V" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="266" count="1"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=81;5=82;</lt>
+			</meth>
+			<meth name="getRootNode" vmsig="()Lnet/mooctest/TernaryNode;" flags=' protected' access="4" signature="()Lnet/mooctest/TernaryNode&lt;TT;&gt;;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="267" count="0"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=85;</lt>
+			</meth>
+			<meth name="getHeight" vmsig="()I" flags=' public' access="1" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="268" count="1"/>
+					<exit s="7" e="7" opcode="ireturn"/>
+				</bl>
+				<lt>0=91;</lt>
+			</meth>
+			<meth name="getNumberOfNodes" vmsig="()I" flags=' public' access="1" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="269" count="1"/>
+					<exit s="7" e="7" opcode="ireturn"/>
+				</bl>
+				<lt>0=97;</lt>
+			</meth>
+			<meth name="isEmpty" vmsig="()Z" flags=' public' access="1" length="13">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="270" count="8"/>
+					<br s="4" e="6">
+						<cond s="11" e="11" id="271" count="6" val="true"/>
+						<cond s="7" e="10" id="272" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="10">
+					<goto s="8" e="10">
+						<tg s="12" e="12" id="273" count="2"/>
+					</goto>
+				</bl>
+				<bl s="11" e="11">
+				</bl>
+				<bl s="12" e="12">
+					<fall s="12" e="12" id="274" count="6"/>
+					<exit s="12" e="12" opcode="ireturn"/>
+				</bl>
+				<lt>0=103;</lt>
+			</meth>
+			<meth name="clear" vmsig="()V" flags=' public' access="1" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="275" count="7"/>
+					<exit s="5" e="5" opcode="return"/>
+				</bl>
+				<lt>0=109;5=110;</lt>
+			</meth>
+			<meth name="getPreorderIterator" vmsig="()Ljava/util/Iterator;" flags=' public' access="1" signature="()Ljava/util/Iterator&lt;TT;&gt;;" length="9">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="276" count="2"/>
+					<exit s="8" e="8" opcode="areturn"/>
+				</bl>
+				<lt>0=115;</lt>
+			</meth>
+			<meth name="getPostorderIterator" vmsig="()Ljava/util/Iterator;" flags=' public' access="1" signature="()Ljava/util/Iterator&lt;TT;&gt;;" length="9">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="277" count="1"/>
+					<exit s="8" e="8" opcode="areturn"/>
+				</bl>
+				<lt>0=120;</lt>
+			</meth>
+			<meth name="getInorderIterator" vmsig="()Ljava/util/Iterator;" flags=' public' access="1" signature="()Ljava/util/Iterator&lt;TT;&gt;;" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="278" count="0"/>
+					<exit s="7" e="7" opcode="athrow"/>
+				</bl>
+				<lt>0=130;</lt>
+			</meth>
+			<meth name="getLevelOrderIterator" vmsig="()Ljava/util/Iterator;" flags=' public' access="1" signature="()Ljava/util/Iterator&lt;TT;&gt;;" length="9">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="279" count="1"/>
+					<exit s="8" e="8" opcode="areturn"/>
+				</bl>
+				<lt>0=135;</lt>
+			</meth>
+			<meth name="iterativePreorderTraverse" vmsig="()V" flags=' public' access="1" length="130">
+				<bl s="0" e="14">
+					<methenter s="0" e="14" id="280" count="1"/>
+					<br s="12" e="14">
+						<cond s="25" e="33" id="281" count="0" val="true"/>
+						<cond s="15" e="24" id="282" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="15" e="24">
+				</bl>
+				<bl s="25" e="33">
+					<fall s="25" e="33" id="292" count="1"/>
+					<br s="31" e="33">
+						<cond s="129" e="129" id="283" count="1" val="true"/>
+						<cond s="34" e="65" id="284" count="5" val="false"/>
+					</br>
+				</bl>
+				<bl s="34" e="65">
+					<br s="63" e="65">
+						<cond s="74" e="78" id="285" count="3" val="true"/>
+						<cond s="66" e="73" id="286" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="66" e="73">
+				</bl>
+				<bl s="74" e="78">
+					<fall s="74" e="78" id="293" count="2"/>
+					<br s="76" e="78">
+						<cond s="87" e="90" id="287" count="4" val="true"/>
+						<cond s="79" e="86" id="288" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="79" e="86">
+				</bl>
+				<bl s="87" e="90">
+					<fall s="87" e="90" id="294" count="1"/>
+					<br s="88" e="90">
+						<cond s="98" e="128" id="289" count="4" val="true"/>
+						<cond s="91" e="97" id="290" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="91" e="97">
+				</bl>
+				<bl s="98" e="128">
+					<fall s="98" e="128" id="295" count="1"/>
+					<goto s="126" e="128">
+						<tg s="25" e="33" id="291" count="5"/>
+					</goto>
+				</bl>
+				<bl s="129" e="129">
+					<exit s="129" e="129" opcode="return"/>
+				</bl>
+				<lt>0=185;8=186;15=187;25=190;34=191;44=192;49=193;55=194;61=197;66=198;74=200;79=201;87=203;91=204;98=207;126=208;129=209;</lt>
+			</meth>
+			<meth name="access$000" vmsig="(Lnet/mooctest/TernaryTree;)Lnet/mooctest/TernaryNode;" flags=' static synthetic' access="4104" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="296" count="7"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=8;</lt>
+			</meth>
+		</class>
+		<class name="TernaryTree$LevelOrderIterator" supername="java/lang/Object" checksum="320529923" signature="Ljava/lang/Object;Ljava/util/Iterator&lt;TT;&gt;;" source="TernaryTree.java" inner="inner" flags=''>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/TernaryTree;)V" flags=' public' access="1" cons="true" length="41">
+				<bl s="0" e="26">
+					<methenter s="0" e="26" id="135" count="1"/>
+					<br s="24" e="26">
+						<cond s="40" e="40" id="136" count="0" val="true"/>
+						<cond s="27" e="39" id="137" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="27" e="39">
+				</bl>
+				<bl s="40" e="40">
+					<fall s="40" e="40" id="138" count="1"/>
+					<exit s="40" e="40" opcode="return"/>
+				</bl>
+				<lt>0=281;9=282;20=283;27=284;40=286;</lt>
+			</meth>
+			<meth name="hasNext" vmsig="()Z" flags=' public' access="1" length="18">
+				<bl s="0" e="11">
+					<methenter s="0" e="11" id="139" count="1"/>
+					<br s="9" e="11">
+						<cond s="16" e="16" id="140" count="0" val="true"/>
+						<cond s="12" e="15" id="141" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="12" e="15">
+					<goto s="13" e="15">
+						<tg s="17" e="17" id="142" count="1"/>
+					</goto>
+				</bl>
+				<bl s="16" e="16">
+				</bl>
+				<bl s="17" e="17">
+					<fall s="17" e="17" id="143" count="0"/>
+					<exit s="17" e="17" opcode="ireturn"/>
+				</bl>
+				<lt>0=289;</lt>
+			</meth>
+			<meth name="next" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="96">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="144" count="1"/>
+					<br s="4" e="6">
+						<cond s="83" e="90" id="145" count="0" val="true"/>
+						<cond s="7" e="39" id="146" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="39">
+					<br s="37" e="39">
+						<cond s="50" e="53" id="147" count="1" val="true"/>
+						<cond s="40" e="49" id="148" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="40" e="49">
+				</bl>
+				<bl s="50" e="53">
+					<fall s="50" e="53" id="154" count="0"/>
+					<br s="51" e="53">
+						<cond s="64" e="68" id="149" count="1" val="true"/>
+						<cond s="54" e="63" id="150" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="54" e="63">
+				</bl>
+				<bl s="64" e="68">
+					<fall s="64" e="68" id="155" count="0"/>
+					<br s="66" e="68">
+						<cond s="80" e="82" id="151" count="0" val="true"/>
+						<cond s="69" e="79" id="152" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="69" e="79">
+				</bl>
+				<bl s="80" e="82">
+					<fall s="80" e="82" id="156" count="1"/>
+					<goto s="80" e="82">
+						<tg s="91" e="95" id="153" count="1"/>
+					</goto>
+				</bl>
+				<bl s="83" e="90">
+					<exit s="90" e="90" opcode="athrow"/>
+				</bl>
+				<bl s="91" e="95">
+					<exit s="95" e="95" opcode="areturn"/>
+				</bl>
+				<lt>0=295;7=296;20=297;25=298;30=299;36=302;40=303;50=305;54=306;64=308;69=309;80=311;83=312;91=315;</lt>
+			</meth>
+			<meth name="remove" vmsig="()V" flags=' public' access="1" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="157" count="0"/>
+					<exit s="7" e="7" opcode="athrow"/>
+				</bl>
+				<lt>0=319;</lt>
+			</meth>
+		</class>
+		<class name="TernaryTree$PostorderIterator" supername="java/lang/Object" checksum="4103808665" signature="Ljava/lang/Object;Ljava/util/Iterator&lt;TT;&gt;;" source="TernaryTree.java" inner="inner" flags=''>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/TernaryTree;)V" flags=' public' access="1" cons="true" length="29">
+				<bl s="0" e="28">
+					<methenter s="0" e="28" id="158" count="1"/>
+					<exit s="28" e="28" opcode="return"/>
+				</bl>
+				<lt>0=215;9=216;20=217;28=218;</lt>
+			</meth>
+			<meth name="hasNext" vmsig="()Z" flags=' public' access="1" length="25">
+				<bl s="0" e="11">
+					<methenter s="0" e="11" id="159" count="0"/>
+					<br s="9" e="11">
+						<cond s="19" e="22" id="160" count="0" val="true"/>
+						<cond s="12" e="18" id="161" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="12" e="18">
+					<br s="16" e="18">
+						<cond s="23" e="23" id="162" count="0" val="true"/>
+						<cond s="19" e="22" id="163" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="19" e="22">
+					<goto s="20" e="22">
+						<tg s="24" e="24" id="164" count="0"/>
+					</goto>
+				</bl>
+				<bl s="23" e="23">
+				</bl>
+				<bl s="24" e="24">
+					<fall s="24" e="24" id="165" count="0"/>
+					<exit s="24" e="24" opcode="ireturn"/>
+				</bl>
+				<lt>0=221;</lt>
+			</meth>
+			<meth name="next" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="216">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="166" count="1"/>
+				</bl>
+				<bl s="5" e="11">
+					<fall s="5" e="11" id="190" count="1"/>
+					<br s="9" e="11">
+						<cond s="79" e="90" id="167" count="1" val="true"/>
+						<cond s="12" e="36" id="168" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="12" e="36">
+					<br s="34" e="36">
+						<cond s="71" e="78" id="169" count="1" val="true"/>
+						<cond s="37" e="48" id="170" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="37" e="48">
+					<br s="46" e="48">
+						<cond s="63" e="70" id="171" count="0" val="true"/>
+						<cond s="49" e="62" id="172" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="49" e="62">
+					<goto s="60" e="62">
+						<tg s="5" e="11" id="173" count="2"/>
+					</goto>
+				</bl>
+				<bl s="63" e="70">
+					<goto s="68" e="70">
+						<tg s="5" e="11" id="174" count="0"/>
+					</goto>
+				</bl>
+				<bl s="71" e="78">
+					<goto s="76" e="78">
+						<tg s="5" e="11" id="175" count="1"/>
+					</goto>
+				</bl>
+				<bl s="79" e="90">
+					<br s="88" e="90">
+						<cond s="202" e="209" id="176" count="0" val="true"/>
+						<cond s="91" e="119" id="177" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="91" e="119">
+					<br s="117" e="119">
+						<cond s="194" e="198" id="178" count="0" val="true"/>
+						<cond s="120" e="143" id="179" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="120" e="143">
+					<br s="141" e="143">
+						<cond s="164" e="173" id="180" count="0" val="true"/>
+						<cond s="144" e="151" id="181" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="144" e="151">
+					<br s="149" e="151">
+						<cond s="164" e="173" id="182" count="0" val="true"/>
+						<cond s="152" e="163" id="183" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="152" e="163">
+					<goto s="161" e="163">
+						<tg s="199" e="201" id="184" count="1"/>
+					</goto>
+				</bl>
+				<bl s="164" e="173">
+					<br s="171" e="173">
+						<cond s="186" e="193" id="185" count="0" val="true"/>
+						<cond s="174" e="185" id="186" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="174" e="185">
+					<goto s="183" e="185">
+						<tg s="199" e="201" id="187" count="0"/>
+					</goto>
+				</bl>
+				<bl s="186" e="193">
+					<goto s="191" e="193">
+						<tg s="199" e="201" id="188" count="0"/>
+					</goto>
+				</bl>
+				<bl s="194" e="198">
+				</bl>
+				<bl s="199" e="201">
+					<fall s="199" e="201" id="191" count="0"/>
+					<goto s="199" e="201">
+						<tg s="210" e="215" id="189" count="1"/>
+					</goto>
+				</bl>
+				<bl s="202" e="209">
+					<exit s="209" e="209" opcode="athrow"/>
+				</bl>
+				<bl s="210" e="215">
+					<exit s="215" e="215" opcode="areturn"/>
+				</bl>
+				<lt>0=224;2=225;5=228;12=229;25=230;33=231;37=232;45=233;49=234;63=236;71=240;79=249;91=250;105=253;108=254;120=255;134=256;152=257;164=258;174=259;186=261;194=264;199=266;202=267;210=270;</lt>
+			</meth>
+			<meth name="remove" vmsig="()V" flags=' public' access="1" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="192" count="0"/>
+					<exit s="7" e="7" opcode="athrow"/>
+				</bl>
+				<lt>0=274;</lt>
+			</meth>
+		</class>
+		<class name="TernaryTree$PreorderIterator" supername="java/lang/Object" checksum="3164400011" signature="Ljava/lang/Object;Ljava/util/Iterator&lt;TT;&gt;;" source="TernaryTree.java" inner="inner" flags=''>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/TernaryTree;)V" flags=' public' access="1" cons="true" length="41">
+				<bl s="0" e="26">
+					<methenter s="0" e="26" id="193" count="2"/>
+					<br s="24" e="26">
+						<cond s="40" e="40" id="194" count="0" val="true"/>
+						<cond s="27" e="39" id="195" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="27" e="39">
+				</bl>
+				<bl s="40" e="40">
+					<fall s="40" e="40" id="196" count="2"/>
+					<exit s="40" e="40" opcode="return"/>
+				</bl>
+				<lt>0=141;9=142;20=143;27=144;40=146;</lt>
+			</meth>
+			<meth name="hasNext" vmsig="()Z" flags=' public' access="1" length="18">
+				<bl s="0" e="11">
+					<methenter s="0" e="11" id="197" count="2"/>
+					<br s="9" e="11">
+						<cond s="16" e="16" id="198" count="0" val="true"/>
+						<cond s="12" e="15" id="199" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="12" e="15">
+					<goto s="13" e="15">
+						<tg s="17" e="17" id="200" count="2"/>
+					</goto>
+				</bl>
+				<bl s="16" e="16">
+				</bl>
+				<bl s="17" e="17">
+					<fall s="17" e="17" id="201" count="0"/>
+					<exit s="17" e="17" opcode="ireturn"/>
+				</bl>
+				<lt>0=149;</lt>
+			</meth>
+			<meth name="next" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TT;" length="96">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="202" count="2"/>
+					<br s="4" e="6">
+						<cond s="83" e="90" id="203" count="0" val="true"/>
+						<cond s="7" e="40" id="204" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="40">
+					<br s="38" e="40">
+						<cond s="52" e="55" id="205" count="1" val="true"/>
+						<cond s="41" e="51" id="206" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="41" e="51">
+				</bl>
+				<bl s="52" e="55">
+					<fall s="52" e="55" id="212" count="1"/>
+					<br s="53" e="55">
+						<cond s="66" e="69" id="207" count="2" val="true"/>
+						<cond s="56" e="65" id="208" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="56" e="65">
+				</bl>
+				<bl s="66" e="69">
+					<fall s="66" e="69" id="213" count="0"/>
+					<br s="67" e="69">
+						<cond s="80" e="82" id="209" count="2" val="true"/>
+						<cond s="70" e="79" id="210" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="70" e="79">
+				</bl>
+				<bl s="80" e="82">
+					<fall s="80" e="82" id="214" count="0"/>
+					<goto s="80" e="82">
+						<tg s="91" e="95" id="211" count="2"/>
+					</goto>
+				</bl>
+				<bl s="83" e="90">
+					<exit s="90" e="90" opcode="athrow"/>
+				</bl>
+				<bl s="91" e="95">
+					<exit s="95" e="95" opcode="areturn"/>
+				</bl>
+				<lt>0=155;7=156;20=157;25=158;30=159;36=162;41=163;52=165;56=166;66=169;70=170;80=172;83=173;91=176;</lt>
+			</meth>
+			<meth name="remove" vmsig="()V" flags=' public' access="1" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="215" count="0"/>
+					<exit s="7" e="7" opcode="athrow"/>
+				</bl>
+				<lt>0=180;</lt>
+			</meth>
+		</class>
+	</package>
+</coverage>
